@@ -8,8 +8,15 @@
     <title>Document</title>
 </head>
 
+
 <body>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/employee.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <hr>
     <div class="container">
+        <h3>직원 ALL 조회</h3>
         <table id="empTable" class="table">
             <thead>
                 <tr>
@@ -17,13 +24,40 @@
                     <th>이름</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="employeeSearchAll">
             </tbody>
         </table>
     </div>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/product.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <hr>
+    <div class="container">
+        <h3>직원 조회</h3>
+        <input type="search" id="employeeInfo" onkeyup="if(window.event.keyCode==13){searchEmployee()}">
+        <button onclick="searchEmployee()">검색</button>
+        <table id="empTable" class="table">
+            <thead>
+                <tr>
+                    <th>사원번호</th>
+                    <th>이름</th>
+                </tr>
+            </thead>
+            <tbody id="employeeSearch">
+            </tbody>
+        </table>
+    </div>
+
+
+    <hr>
+    <div class="container">
+        <h3>Create BackendApp Exception</h3>
+        <input type="text" value="NumberFormat" disabled>
+        <button onclick="executeNumberFormatExeption()">생성</button><br><br>
+
+        <input type="text" value="NullPointer" disabled>
+        <button onclick="executeNullPointExeption()">생성</button><br><br>
+    </div>
+
 </body>
+
 
 </html>

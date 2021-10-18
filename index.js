@@ -8,6 +8,6 @@ app.listen(80, function () {
 
 app.use(express.static('public'))
   
-app.get('/product', function (req, res) {
+app.get('/employee', function (req, res) {
     res.sendFile(dir + '/index.html');
 });
