@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 const serviceUrl = 'http://localhost:8080'
 window.onload = function () {
 
     fetch(`${serviceUrl}/search`)
-=======
-window.onload = function () {
-    fetch('http://localhost:8080/search')
->>>>>>> 08f09a5 (develop-jyjeong-20211018)
         .then(response => {
             if (response.status == 200) {
                 //통신 성공
@@ -35,25 +30,14 @@ window.onload = function () {
         })
         .catch(err => {
             console.log(err)
-        })
-<<<<<<< HEAD
-        
+        })    
 }
 
-
-=======
-}
-
->>>>>>> 08f09a5 (develop-jyjeong-20211018)
 function searchEmployee() {
     const tbody = document.querySelector('#employeeSearch')
     tbody.innerHTML = ""
     const employeeInfo = document.querySelector('#employeeInfo')
-<<<<<<< HEAD
     fetch(`${serviceUrl}/search/${employeeInfo.value}`)
-=======
-    fetch('http://localhost:8080/search/' + employeeInfo.value)
->>>>>>> 08f09a5 (develop-jyjeong-20211018)
     .then(response => {
         if (response.status == 200) {
             //통신 성공
@@ -85,11 +69,7 @@ function searchEmployee() {
 }
 
 function executeNumberFormatExeption() {
-<<<<<<< HEAD
     fetch(`${serviceUrl}/exception/numberformat`)
-=======
-    fetch('http://localhost:8080/exception/numberformat')
->>>>>>> 08f09a5 (develop-jyjeong-20211018)
     .then(response => {
         if (response.status == 200) {
             //통신 성공
@@ -109,11 +89,7 @@ function executeNumberFormatExeption() {
 }
 
 function executeNullPointExeption() {
-<<<<<<< HEAD
     fetch(`${serviceUrl}/exception/nullpointer`)
-=======
-    fetch('http://localhost:8080/exception/nullpointer')
->>>>>>> 08f09a5 (develop-jyjeong-20211018)
     .then(response => {
         if (response.status == 200) {
             //통신 성공
@@ -130,7 +106,6 @@ function executeNullPointExeption() {
     .catch(err => {
         console.log(err)
     })
-<<<<<<< HEAD
 }
 
 function insertEmployee() {
@@ -221,6 +196,5 @@ removeButton.addEventListener("click", () => {
             console.log(err)
         })
 });
-=======
-}
->>>>>>> 08f09a5 (develop-jyjeong-20211018)
+
+
