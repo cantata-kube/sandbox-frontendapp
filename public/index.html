@@ -20,7 +20,36 @@
             <tbody>
             </tbody>
         </table>
+
+        <hr/>
+        <hr/>
+        <h3>사원 등록</h3>
+        <div> 
+            <input type="text" id="insertEmployeeId" name="insertEmployeeId" size="10">
+            <br/>
+            <input type="text" id="insertEmployeeName" name="insertEmployeeName" size="10">
+            <br/>
+            <input type="button" value="등록" onclick="insertEmployee()">
+        </div>
+
+        <hr/>
+        <hr/>
+        <h3>사원 이름 수정</h3>
+        <div> 
+            <input type="text" id="updateEmployeeId" name="updateEmployeeId" size="10">
+            <br/>
+            <input type="text" id="updateEmployeeName" name="updateEmployeeName" size="10">
+            <br/>
+            <input type="button" value="수정" onclick="updateEmployee()">
+        </div>
+
+
+
+
     </div>
+    
+
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/product.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
