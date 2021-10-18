@@ -19,3 +19,7 @@ nodemon은 코드 저장 시 자동 빌드를 수행합니다.
 ### 4. nodemon으로 웹서버 실행
 
 `nodemon`
+
+웹브라우저에서 페이지 접속
+
+`http://localhost/`
