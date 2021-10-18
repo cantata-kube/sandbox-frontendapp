@@ -1,4 +1,3 @@
-
 const serviceUrl = 'http://localhost:8080'
 window.onload = function () {
 
@@ -32,7 +31,9 @@ window.onload = function () {
         .catch(err => {
             console.log(err)
         })
+        
 }
+
 
 function searchEmployee() {
     const tbody = document.querySelector('#employeeSearch')
@@ -70,7 +71,6 @@ function searchEmployee() {
 }
 
 function executeNumberFormatExeption() {
-
     fetch(`${serviceUrl}/exception/numberformat`)
     .then(response => {
         if (response.status == 200) {
