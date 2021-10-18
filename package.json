@@ -1,0 +1,22 @@
+{
+  "name": "sandbox-frontendapp",
+  "version": "1.0.0",
+  "description": "Container Sandbox 구축을 위한 Frontend App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyshop300/sandbox-frontendapp.git"
+  },
+  "author": "psyong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skyshop300/sandbox-frontendapp/issues"
+  },
+  "homepage": "https://github.com/skyshop300/sandbox-frontendapp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
