@@ -1,6 +1,6 @@
 # sandbox-frontendapp
 
-### 1. Node.js 다운로드
+### 1. Node.js 다운로드 및 설치
 
 [https://nodejs.org/ko/](https://nodejs.org/ko/)
 
