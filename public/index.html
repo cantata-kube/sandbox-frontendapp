@@ -9,20 +9,83 @@
 </head>
 
 <body>
-    <div class="container">
-        <table id="empTable" class="table">
-            <thead>
-                <tr>
-                    <th>사원번호</th>
-                    <th>이름</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+    <div class=" my-5">
+        <div class="container">
+            <h3>직원 ALL 조회</h3>
+            <table id="empTable" class="table">
+                <thead>
+                    <tr>
+                        <th>사원번호</th>
+                        <th>이름</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeSearchAll">
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+        <div class="container">
+            <h3>직원 조회</h3>
+            <input type="search" id="employeeInfo" onkeyup="if(window.event.keyCode==13){searchEmployee()}">
+            <button onclick="searchEmployee()">검색</button>
+            <table id="empTable" class="table">
+                <thead>
+                    <tr>
+                        <th>사원번호</th>
+                        <th>이름</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeSearch">
+                </tbody>
+            </table>
+        </div>
+
+
+        <hr />
+        <div class="container">
+            <h3>사원 등록</h3>
+            <div>
+                <input type="text" id="insertEmployeeId" name="insertEmployeeId" size="10">
+                <br />
+                <input type="text" id="insertEmployeeName" name="insertEmployeeName" size="10">
+                <br />
+                <input type="button" value="등록" onclick="insertEmployee()">
+            </div>
+            <hr />
+            <h3>사원 이름 수정</h3>
+            <div>
+                <input type="text" id="updateEmployeeId" name="updateEmployeeId" size="10">
+                <br />
+                <input type="text" id="updateEmployeeName" name="updateEmployeeName" size="10">
+                <br />
+                <input type="button" value="수정" onclick="updateEmployee()">
+            </div>
+        </div>
+
+        <hr>
+        <div class="container">
+            <h3>Create BackendApp Exception</h3>
+            <input type="text" value="NumberFormat" disabled>
+            <button onclick="executeNumberFormatExeption()">생성</button><br><br>
+
+            <input type="text" value="NullPointer" disabled>
+            <button onclick="executeNullPointExeption()">생성</button><br><br>
+        </div>
+
+        <hr>
+        <div class="container">
+            <h3>사원 제거</h3>
+            <div class="input-group">
+                <input id="removeEmployeeInput" class="form-control" type="text" placeholder="제거할 사원번호를 입력하세요.">
+                <div id="removeEmployeeButton" class="input-group-append btn btn-danger btn-lg col-md-2">제거</div>
+            </div>
+        </div>
     </div>
+
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/product.js"></script>
+    <script type="text/javascript" src="js/employee.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </body>
 
