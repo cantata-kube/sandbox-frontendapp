@@ -16,6 +16,6 @@ nodemon은 코드 저장 시 자동 빌드를 수행합니다.
 
 `npm install -g nodemon`
 
-nodemon으로 실행합니다.
+### 4. nodemon으로 웹서버 실행
 
 `nodemon`
