@@ -1,3 +1,4 @@
+
 const serviceUrl = 'http://localhost:8080'
 window.onload = function () {
 
@@ -30,7 +31,7 @@ window.onload = function () {
         })
         .catch(err => {
             console.log(err)
-        })    
+        })
 }
 
 function searchEmployee() {
@@ -69,6 +70,7 @@ function searchEmployee() {
 }
 
 function executeNumberFormatExeption() {
+
     fetch(`${serviceUrl}/exception/numberformat`)
     .then(response => {
         if (response.status == 200) {
@@ -196,5 +198,3 @@ removeButton.addEventListener("click", () => {
             console.log(err)
         })
 });
-
-
