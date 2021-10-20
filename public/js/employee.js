@@ -115,7 +115,7 @@ function insertEmployee() {
     const insertEmployeeName = document.querySelector("#insertEmployeeName").value
 
     fetch(`${serviceUrl}/insertEmployee`,{
-        method: "POST",
+        method: "PUT",
         headers: {
             "Content-Type": "application/json",
         },
