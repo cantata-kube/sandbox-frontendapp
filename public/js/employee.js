@@ -1,4 +1,9 @@
-const serviceUrl = 'http://localhost:8080'
+/* 로컬환경 */
+// const serviceUrl = 'http://localhost:8080'
+
+/* 쿠버네티스 환경 */
+const serviceUrl = 'http://sandbox-backendapp:8080'
+
 window.onload = function () {
 
     fetch(`${serviceUrl}/search`)
@@ -115,7 +120,7 @@ function insertEmployee() {
     const insertEmployeeName = document.querySelector("#insertEmployeeName").value
 
     fetch(`${serviceUrl}/insertEmployee`,{
-        method: "PUT",
+        method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
@@ -148,7 +153,7 @@ function updateEmployee() {
     const updateEmployeeName = document.querySelector("#updateEmployeeName").value
 
     fetch(`${serviceUrl}/updateEmployee/${updateEmployeeId}`,{
-        method: "POST",
+        method: "PUT",
         headers: {
             "Content-Type": "application/json",
         },
