@@ -2,7 +2,7 @@
 
 ## 배포 정보
 
-## 1. 구동 명령어
+### 1. 구동 명령어
 
 **1) Node.js 구동 환경 설치**
 
@@ -16,11 +16,11 @@
 
 `npm start`
 
-## 2. Port
+### 2. Port
 
 port: 3000
 
-## 3. Version
+### 3. Version
 
 Node.js  v14.18.1 <br><br>
 
