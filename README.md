@@ -1,5 +1,30 @@
 # sandbox-frontendapp
 
+# 배포 정보
+
+## 1. 구동 명령어
+
+### 1) Node.js 구동 환경 설치
+
+`apt-get install npm`
+
+### 2) npm을 통한 의존성 설치
+
+`npm install`
+
+### 3) Frontend 서버 구동
+
+`npm start`
+
+## 2. Port
+
+port: 3000
+
+## 3. Version
+
+Node.js  v14.18.1 <br><br>
+
+# 개발환경 구축 (Windows 환경)
 ### 1. Node.js 다운로드 및 설치
 
 [https://nodejs.org/ko/](https://nodejs.org/ko/)
