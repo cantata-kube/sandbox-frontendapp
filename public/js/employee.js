@@ -1,4 +1,9 @@
-const serviceUrl = 'http://localhost:8080'
+/* 로컬환경 */
+// const serviceUrl = 'http://localhost:8080'
+
+/* 쿠버네티스 환경 */
+const serviceUrl = 'http://sandbox-backendapp:8080'
+
 window.onload = function () {
 
     fetch(`${serviceUrl}/search`)
