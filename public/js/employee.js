@@ -2,7 +2,7 @@
 // const serviceUrl = 'http://localhost:8080'
 
 /* 쿠버네티스 환경 */
-const serviceUrl = 'http://sandbox-backendapp:8080'
+const serviceUrl = 'sandbox-backendapp:8080'
 
 window.onload = function () {
 
