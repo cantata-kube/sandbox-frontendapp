@@ -2,7 +2,7 @@
 // const serviceUrl = 'http://localhost:8080'
 
 /* 쿠버네티스 환경 */
-const serviceUrl = 'http://sandbox-backendapp:8080'
+const serviceUrl = 'sandbox-backendapp:8080'
 
 window.onload = function () {
 
@@ -75,7 +75,7 @@ function searchEmployee() {
     })
 }
 
-function executeNumberFormatExeption() {
+function executeNumberFormatException() {
     fetch(`${serviceUrl}/exception/numberformat`)
     .then(response => {
         if (response.status == 200) {
@@ -95,7 +95,7 @@ function executeNumberFormatExeption() {
     })
 }
 
-function executeNullPointExeption() {
+function executeNullPointerExeption() {
     fetch(`${serviceUrl}/exception/nullpointer`)
     .then(response => {
         if (response.status == 200) {
