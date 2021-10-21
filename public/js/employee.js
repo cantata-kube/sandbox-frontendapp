@@ -70,7 +70,7 @@ function searchEmployee() {
     })
 }
 
-function executeNumberFormatExeption() {
+function executeNumberFormatException() {
     fetch(`${serviceUrl}/exception/numberformat`)
     .then(response => {
         if (response.status == 200) {
@@ -90,7 +90,7 @@ function executeNumberFormatExeption() {
     })
 }
 
-function executeNullPointExeption() {
+function executeNullPointerExeption() {
     fetch(`${serviceUrl}/exception/nullpointer`)
     .then(response => {
         if (response.status == 200) {
@@ -148,7 +148,7 @@ function updateEmployee() {
     const updateEmployeeName = document.querySelector("#updateEmployeeName").value
 
     fetch(`${serviceUrl}/updateEmployee/${updateEmployeeId}`,{
-        method: "POST",
+        method: "PUT",
         headers: {
             "Content-Type": "application/json",
         },
