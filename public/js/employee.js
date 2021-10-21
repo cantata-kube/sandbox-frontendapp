@@ -4,7 +4,7 @@
 /* 쿠버네티스 환경 */
 //const serviceUrl = 'http://sandbox-backendapp:8080'
 
-const serviceUrl = 'http://100.9.3.106:8080'
+const serviceUrl = 'http://sandbox-backendapp.apps.hqokd.nshcloud.com'
 window.onload = function () {
 
     fetch(`${serviceUrl}/search`)
